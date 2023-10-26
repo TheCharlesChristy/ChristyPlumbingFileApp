@@ -1,0 +1,84 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.Login-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+.Login-Container-Header{
+    width: 100%;
+    height: 34px;
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+}
+.Login-Container-Username{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Login-Container-Username-Label{
+    height: 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.Login-Container-Username-Input{
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Login-Container-Password{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Login-Container-Password-Label{
+    height: 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.Login-Container-Password-Input{
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Login-Container-Signin{
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #1D3C99;
+    color: white;
+    cursor: pointer;
+}
+.Login-Container-Signin:hover{
+    transition: 0.3s all ease-in-out;
+    background-color: #1a378c;
+    transform: scale(1.05);
+}
