@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "Charles Christy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "mongoose": "^8.0.0"
+  }
 }

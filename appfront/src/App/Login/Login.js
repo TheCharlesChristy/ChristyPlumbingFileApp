@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 
-function Login() {
+function Login({ gotoadmin, gotouser }) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -24,11 +24,20 @@ function Login() {
         setUsername('');
         setPassword('');
         const data = await response.json();
-        console.log(data);
+        if (data.success === true) {
+            document.querySelector('.Login-error').innerHTML = null;
+            if (data.admin === true) {
+                gotoadmin(data.username, data.password);
+            } else {
+                gotouser(data.username, data.password);
+            }
+        } else {
+            document.querySelector('.Login-error').innerHTML = data.error;
+        }
     };
 
     return (
-        <div className='Login'>
+        <div className='Login' id='Login'>
             <div className='Login-Container'>
                 <p className='Login-Container-Header'>Login</p>
                 <div className='Login-Container-Username'>
@@ -53,6 +62,7 @@ function Login() {
                     Sign In
                 </button>
             </div>
+            <p className='Login-error'></p> {/* this will be used to display errors */}
         </div>
     );
 }

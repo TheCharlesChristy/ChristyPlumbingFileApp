@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": "john doe",
+      "password": "96d9632f363564cc3032521409cf22a852f2032eec099ed5967c0d000cec607a"
+    },
+    {
+      "id": "test",
+      "password": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    }
+  ],
+  "admins": [
+    "test"
+  ]
+}
