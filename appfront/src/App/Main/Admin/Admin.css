@@ -1,0 +1,50 @@
+.Admin{
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s ease-in-out;
+}
+.Admin-Tag{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+}
+.Admin-Filler{
+    height: 100%;
+}
+.Admin-Container-FileExplorer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+@media (max-width: 500px) {
+    .Admin{
+        flex-direction: column-reverse;
+    }
+    .Admin-Filler{
+        height: 60px;
+        width: 100%;
+    }
+    .Admin-Container-FileExplorer{
+        width: 100%;
+        height: calc(100% - 100px);
+    }
+}
+@media (min-width: 500px) {
+    .Admin{
+        flex-direction: row;
+    }
+    .Admin-Filler{
+        width: 60px;
+        height: 100%;
+    }
+    .Admin-Container-FileExplorer{
+        height: 100%;
+        width: 100%;
+    }
+}

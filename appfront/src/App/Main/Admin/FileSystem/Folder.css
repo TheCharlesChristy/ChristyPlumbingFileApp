@@ -1,0 +1,55 @@
+.Folder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+.Folder-Header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2px);
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(128,128,128,0.5);
+    overflow: hidden;
+}
+.Folder-Header-Icon{
+    width: 30px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/FolderIcon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Folder-Header-Name{
+    color: black;
+    margin: 0px 10px;
+}
+.Folder-Header-DropDown{
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/DropDown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Folder-Contents {
+    overflow: hidden;
+    width: 97%;
+    margin-left: 3%;
+}
+.Folder-Filler{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}

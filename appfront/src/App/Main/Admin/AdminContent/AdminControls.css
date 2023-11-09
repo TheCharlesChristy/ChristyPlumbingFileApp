@@ -1,0 +1,141 @@
+.AdminControls{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    .AdminControls {
+        width: 100%;
+        height: 60px;
+        margin: 5px 0 5px 0;
+        flex-direction: row;
+    }
+    .AdminControls-Tag {
+        display: none;
+    }
+}
+@media (min-width: 500px) {
+    .AdminControls {
+        height: 100%;
+        width: 60px;
+        margin: 0px 5px 0px 5px;
+        flex-direction: column;
+    }
+}
+
+.AdminControls-Tag{
+    font-size: 10px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+}
+.AdminControls-AddFolder{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 0 5px;
+    border: 1px solid rgba(128,128,128,0.5);
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.AdminControls-AddFile{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 0 5px;
+    border: 1px solid rgba(128,128,128,0.5);
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+.AdminControls-ManageUsers{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 0 5px;
+    border: 1px solid rgba(128,128,128,0.5);
+    border-radius: 5px;
+}
+.AdminControls-Logout{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px 0 5px;
+    border: 1px solid rgba(128,128,128,0.5);
+    border-radius: 5px;
+}
+.AdminControls-AddFolder-Btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/Add-Folder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.AdminControls-AddFile-Btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/Add-File.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.AdminControls-ManageUsers-Btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/Manage-Users.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.AdminControls-Logout-Btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-image: url('C:/Users/Charles/Desktop/Projects/ChristyPlumbingFileApp/appfront/src/Appimgs/Logout.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.AdminControls-AddFolder-Btn:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.AdminControls-AddFile-Btn:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.AdminControls-ManageUsers-Btn:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+.AdminControls-Logout-Btn:hover{
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}

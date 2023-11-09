@@ -13,17 +13,36 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   position: static;
+  padding-top: 20px;
+}
+.App-Content{
+  width: 100%;
+  height: 100%;
+  position: static;
+  transition: all 1s ease-in-out;
+
+}
+.App-Content-Setting{
+  transition: all 0s ease-in-out;
+  transform: translateX(-100%);
+}
+.App-Content-In{
+  transition: all 1s ease-in-out;
+  transform: translateX(0%);
+}
+.App-Content-Out{
+  transition: all 1s ease-in-out;
+  transform: translateX(-100%);
 }
 .App-Logo{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  height: 150px;
+  height: 100px;
   max-width: 90%;
-  position: absolute;
-  top: 20px;
 }
 .App-Logo-Text-Christy{
   display: flex;

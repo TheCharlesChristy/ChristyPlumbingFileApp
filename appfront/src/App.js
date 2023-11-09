@@ -1,23 +1,38 @@
 import './App.css';
 import { useState } from 'react';
 import Login from './App/Login/Login.js';
+import Admin from './App/Main/Admin/Admin.js';
 
 function App() {
 
+  function doouttransform(){
+    let appcontent = document.getElementById('App-Content');
+    appcontent.classList.add('App-Content-Out');
+  }
+
   const gotoadmin = (username, password) => {
-    dologintransform();
+    doouttransform();
     setTimeout(() => {
-      setContent("Some Admin Page")
-    }, 1200);
+      setContent(<Admin uname={username} pass={password} logout={gotologin}/>)
+      let appcontent = document.getElementById('App-Content');
+      appcontent.classList.remove('App-Content-Out');
+    }, 1000);
   }
   const gotouser = (username, password) => {
-    dologintransform();
+    doouttransform();
     setTimeout(() => {
-      setContent("Some User Page")
-    }, 1200);
+      setContent(<Admin uname={username} pass={password} logout={gotologin}/>)
+      let appcontent = document.getElementById('App-Content');
+      appcontent.classList.remove('App-Content-Out');
+    }, 1000);
   }
-  function dologintransform(){
-    document.getElementById('Login').style.transform = 'translateX(-100%)';
+  const gotologin = () => {
+    doouttransform();
+    setTimeout(() => {
+      setContent(<Login gotoadmin={gotoadmin} gotouser={gotouser}/>)
+      let appcontent = document.getElementById('App-Content');
+      appcontent.classList.remove('App-Content-Out');
+    }, 1000);
   }
 
   const [content, setContent] = useState(<Login gotoadmin={gotoadmin} gotouser={gotouser}/>);
@@ -28,7 +43,9 @@ function App() {
         <p className='App-Logo-Text-Christy'>CHRISTY</p>
         <p className='App-Logo-Text-PAH'>Plumbing & Heating</p>
       </div>
-      {content}
+      <div id='App-Content' className='App-Content'>
+        {content}
+      </div>
     </div>
   );
 }

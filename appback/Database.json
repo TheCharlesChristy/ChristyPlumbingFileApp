@@ -1,15 +1,30 @@
 {
   "users": [
     {
-      "id": "john doe",
-      "password": "96d9632f363564cc3032521409cf22a852f2032eec099ed5967c0d000cec607a"
-    },
-    {
-      "id": "test",
-      "password": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+      "id": "admin",
+      "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918"
     }
   ],
   "admins": [
-    "test"
-  ]
+    "admin"
+  ],
+  "Drive": [
+    {
+      "type": "folder",
+      "name": "test",
+      "id": 0,
+      "owner": "admin",
+      "url": "Drive",
+      "contents": [
+        {
+            "type": "file",
+            "name": "test.txt",
+            "id": 1,
+            "owner": "admin",
+            "url": "Drive/test"
+        }
+      ]
+    }
+  ],
+  "currentid": 1
 }
